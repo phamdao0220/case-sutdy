@@ -1,14 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<br lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
+
 </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style>
+    td, th {
+        border: 1px solid black;
+    }
+</style>
 <body>
-<script>
-    let a = 5;
-   let  b = "adasdas"   + a;
-   document.write(b);
-</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h3 class="text-center">Form-Add</h3>
+            <form action="" id="form-add" class="">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder=" Name idol">
+                </div>
+<div class="form-group">
+    <input type="text" id="age" placeholder=" Age idol">
+</div>
+                <div class="form-group">
+                    <input type="text" id="add" placeholder=" Add idol">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="birthday" placeholder="Birthday idol">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="weight" placeholder=" Weight idol">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="height" placeholder=" Height idol">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="img" placeholder=" Img idol">
+                </div>
+            </form>
+
+            <h3 class="text-center">Form-edit</h3>
+            <form action="" id="form-edit">
+                <div class="form-group">
+                <input type="text" id="edit-name" placeholder=" Name idol">
+        </div>
+                <div class="form-group">
+                    <input type="text" id="edit-age" placeholder=" Age idol">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="edit-add" placeholder=" Add idol">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="edit-birthday" placeholder="Height idol">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="edit-weight" placeholder="Weight idol">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="edit-height" placeholder=" Birthday  idol">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="edit-img" placeholder=" Img idol">
+                </div>
+                <button type="button" onclick="editIdol()">Cap Nhat</button>
+            </form>
+
+
+            <button onclick="addIdol111()"> thông tin của Idol</button>
+
+
+
+
+            <div id="result"></div>
+        </div>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="official-lis.js"></script>
+<script src="official-idol.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

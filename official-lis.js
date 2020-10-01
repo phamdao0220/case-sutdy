@@ -53,10 +53,10 @@ class Idol{
 edit(name,age,birthday,height,weight,img,add){
     this.name = name;
     this.age = age;
-    this.birthday = birthday;
-    this.height = height;
-    this.weight = weight;
     this.add= add;
+    this.birthday = birthday;
+    this.weight = weight;
+    this.height = height;
     this.img = img;
 }
 
@@ -64,12 +64,11 @@ edit(name,age,birthday,height,weight,img,add){
         let str = `
             <td>${this.name}</td>
             <td>${this.age}</td>
+             <td>${this.add}</td>
             <td>${this.birthday}</td>
-            <td>${this.height}</td>
             <td>${this.weight}</td>
-            <td>${this.add}</td>
-            <td><img src="${this.img}"></td>
-            </tr>`
+            <td>${this.height}</td>
+            <td><img src="${this.img}"></td>`
 
         return str;
 

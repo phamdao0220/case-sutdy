@@ -25,6 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -37,7 +38,7 @@
       <updated>1601397177422</updated>
       <workItem from="1601397178890" duration="432000" />
       <workItem from="1601426805332" duration="21674000" />
-      <workItem from="1601481173231" duration="6797000" />
+      <workItem from="1601481173231" duration="14065000" />
     </task>
     <servers />
   </component>
@@ -45,10 +46,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="620" y="44" width="670" height="757" key="search.everywhere.popup" timestamp="1601440919922">
+    <state x="620" y="44" width="670" height="757" key="search.everywhere.popup" timestamp="1601531809490">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="620" y="44" width="670" height="757" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1601440919922" />
+    <state x="620" y="44" width="670" height="757" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1601531809490" />
     <state x="620" y="62" width="670" height="676" key="search.everywhere.popup/0.23.1280.715@0.23.1280.715" timestamp="1601431428772" />
   </component>
 </project>
