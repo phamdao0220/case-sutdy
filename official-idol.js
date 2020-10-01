@@ -9,17 +9,18 @@ class ManagerIdol {
     }
 
     removeIdol(index) {
-        this.official.splice(index, 1);
+        if (confirm('ban chac chan muon xoa?')) {
+            this.official.splice(index, 1);
+        }
     }
 
-    editIdol(idol, name, age, birthday, height, weight, img, add) {
-        idol.edit(name, age, birthday, height, weight, img, add);
+    editIdol(idol, name, age, add, birthday, height, weight, img) {
+        idol.edit(name, age, add, birthday, height, weight, img);
     }
 
     getHtml() {
-        let str = '<table id="official" class="table table-hover">';
+        let str = '<table id="official" class="table">';
         str += ` <tr>
-                        <th>ORDER</th>
                         <th>NAME</th>
                         <th>AGE</th>
                         <th>ADD</th>
@@ -31,7 +32,7 @@ class ManagerIdol {
                      </tr>`;
         for (let i = 0; i < this.official.length; i++) {
             let official = this.official[i].getHtml();
-            str += `<tr><td>${i + 1}</td> ${official} ${this.getAction(i)}</tr>`;
+            str += "<tr>" + `${official}` + `${this.getAction(i)}` + "</tr>";
         }
         str += "</table>";
         return str;
@@ -42,6 +43,7 @@ class ManagerIdol {
                         <td><button class="btn btn-danger" onclick="del(${index})">Delete</button></td>`;
         return action;
     }
+
     getIdolByIndex(index) {
         return this.official[index];
     }

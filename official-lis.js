@@ -1,5 +1,5 @@
-class Idol{
-    constructor(name,age,birthday,height,weight,img,add) {
+class Idol {
+    constructor(name, age,add, birthday, height, weight, img) {
         this.name = name;
         this.age = age;
         this.birthday = birthday;
@@ -8,69 +8,84 @@ class Idol{
         this.add = add;
         this.img = img;
     }
-    getName(){
+
+    getName() {
         return this.name;
     }
+
     setName(value) {
         this.Name = value;
     }
-    getAge(){
+
+    getAge() {
         return this.age;
     }
+
     setAge(value) {
         this.Age = value;
     }
-    getBirthday(){
+
+    getAdd() {
+        return this.add;
+    }
+
+    setAdd(value) {
+        this.Add = value;
+    }
+
+    getBirthday() {
         return this.birthday;
     }
+
     setBirthday(value) {
         this.Birthday = value;
     }
-    getHeight(){
-        return this.height;
-    }
-    setHeight(value) {
-        this.Height= value;
-    }
-    getWeight(){
+
+    getWeight() {
         return this.weight;
     }
+
     setWeight(value) {
-        this.Weight= value;
+        this.Weight = value;
     }
-    getAdd(){
-        return this.add;
+
+    getHeight() {
+        return this.height;
     }
-    setAdd(value) {
-        this.Add= value;
+
+    setHeight(value) {
+        this.Height = value;
     }
-    getImg(){
+
+    getImg() {
         return this.img;
     }
-    setImg(value) {
-        this.Img= value;
-    }
-edit(name,age,birthday,height,weight,img,add){
-    this.name = name;
-    this.age = age;
-    this.add= add;
-    this.birthday = birthday;
-    this.weight = weight;
-    this.height = height;
-    this.img = img;
-}
 
-        getHtml(){
+    setImg(value) {
+        this.Img = value;
+    }
+
+    edit(name, age,add, birthday, height, weight, img) {
+        this.name = name;
+        this.age = age;
+        this.add = add;
+        this.birthday = birthday;
+        this.weight = weight;
+        this.height = height;
+        this.img = img;
+    }
+
+    getHtml() {
         let str = `
             <td>${this.name}</td>
             <td>${this.age}</td>
-             <td>${this.add}</td>
+            <td>${this.add}</td>
             <td>${this.birthday}</td>
             <td>${this.weight}</td>
             <td>${this.height}</td>
-            <td><img src="${this.img}"></td>`
+            <td><img height="100px" width="100px" src="${this.img}"></td>`
 
         return str;
 
-        }
     }
+}
